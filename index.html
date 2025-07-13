@@ -73,7 +73,9 @@
 
     <div class="section">
         <h2>About Tcl</h2>
-        <p>Tcl (Tool Command Language) was developed at UC Berkeley in 1988. It's commonly used for automation, testing, and system administration tasks. Many organizations maintain Tcl scripts for legacy system integration.</p>
+        <p>Tcl (Tool Command Language) was developed by John Ousterhout at UC Berkeley in 1988. Initially created for chip design automation, it has evolved into a robust scripting language widely used in network testing, system administration, and legacy system maintenance.</p>
+        
+        <p>The language is particularly valued for its simplicity and extensibility. The HTTP package, introduced in Tcl 8.0, provides straightforward methods for web service integration and API testing.</p>
     </div>
 
     <div class="section">
@@ -143,7 +145,24 @@ tclsh --version
 
     <div class="section">
         <h2>HTTP Package Reference</h2>
-        <p>The Tcl http package provides basic HTTP client functionality. It supports GET requests, custom headers, and response handling. Useful for testing and automation tasks in enterprise environments.</p>
+        <p>The Tcl http package provides basic HTTP client functionality. It supports GET requests, custom headers, and response handling. Documentation available in the <a href="https://www.tcl.tk/man/tcl8.6/TclCmd/http.htm" target="_blank">official Tcl manual</a>.</p>
+        
+        <p>Key procedures include:</p>
+        <ul>
+            <li><code>::http::geturl</code> - Perform HTTP requests</li>
+            <li><code>::http::data</code> - Extract response body</li>
+            <li><code>::http::status</code> - Get response status</li>
+            <li><code>::http::cleanup</code> - Release request resources</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Additional Resources</h2>
+        <ul>
+            <li><a href="https://www.tcl.tk/doc/" target="_blank">Tcl Developer Site</a></li>
+            <li><a href="https://wiki.tcl-lang.org/" target="_blank">Tcl Community Wiki</a></li>
+            <li><a href="https://www.tcl.tk/man/tcl8.6/" target="_blank">Tcl 8.6 Manual</a></li>
+        </ul>
     </div>
 </body>
 </html>
